@@ -1,0 +1,165 @@
+{
+	"info": {
+		"_postman_id": "2a8ba77f-8808-4d69-883c-b4c4b289ae41",
+		"name": "Snappy",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create a User",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6IjJaUXBKM1VwYmpBWVhZR2FYRUpsOGxWMFRPSSIsImtpZCI6IjJaUXBKM1VwYmpBWVhZR2FYRUpsOGxWMFRPSSJ9.eyJhdWQiOiJodHRwczovL21heGNvZGUubmV0LzFhOTVhNTQ0LWEyOGUtNDRkYy1iOGRkLWIyNzU5YTg1YmE1ZiIsImlzcyI6Imh0dHBzOi8vc3RzLndpbmRvd3MubmV0LzFkYTNjYjBmLTk2MjgtNDUyYy1hMGNhLTA3OTVlZjEwOTg0Yy8iLCJpYXQiOjE2NjY2MDE0MzEsIm5iZiI6MTY2NjYwMTQzMSwiZXhwIjoxNjY2NjA2ODI2LCJhY3IiOiIxIiwiYWlvIjoiQVZRQXEvOFRBQUFBK0c3elRNWTFMQjNPTmlOSGdqWjhidnJUMjdwME5ES0hrbjZCbHRzbHZtTTdVaExRY2lTbG5XbzRWWC9qUWk5R1lHL3hVaXlJSUZtT3l5M05QemFyc1J2ZHNLR3VxZzYrY1RKVmFjbkUwUjA9IiwiYW1yIjpbInB3ZCIsIm1mYSJdLCJhcHBpZCI6IjFhOTVhNTQ0LWEyOGUtNDRkYy1iOGRkLWIyNzU5YTg1YmE1ZiIsImFwcGlkYWNyIjoiMCIsImZhbWlseV9uYW1lIjoiTWFyaW5pY2EiLCJnaXZlbl9uYW1lIjoiQWRyaWFuIiwiaXBhZGRyIjoiODIuNzcuMjM3LjUyIiwibmFtZSI6IkFkcmlhbiBNYXJpbmljYSIsIm9pZCI6IjM1NjQ2Yjg3LTdlMjctNGRlMi1hOGZlLTAxMzJlM2QwZmJkZCIsIm9ucHJlbV9zaWQiOiJTLTEtNS0yMS02MTg2MjU2ODItMjUxNTE3ODIwMi0yMjI0NjUwNjQxLTQxMTkiLCJyaCI6IjAuQVhrQUQ4dWpIU2lXTEVXZ3lnZVY3eENZVEVTbGxScU9vdHhFdU4yeWRacUZ1bDk1QUhjLiIsInNjcCI6InVzZXJfaW1wZXJzb25hdGlvbiIsInN1YiI6IllOQWRCWmdHaXpkSGdlLVJkdkZJSGJram0xRE9qNkpoZVVxLVRuY3hseVEiLCJ0aWQiOiIxZGEzY2IwZi05NjI4LTQ1MmMtYTBjYS0wNzk1ZWYxMDk4NGMiLCJ1bmlxdWVfbmFtZSI6ImFkcmlhbi5tYXJpbmljYUBtYXhjb2RlLm5ldCIsInVwbiI6ImFkcmlhbi5tYXJpbmljYUBtYXhjb2RlLm5ldCIsInV0aSI6InJDOW94aXRVRWt1Tlp2RXJGWmtqQUEiLCJ2ZXIiOiIxLjAifQ.fv1Ci6nTnkU_G5ZzOB10_dtMAnpkwowr5ir8Jf_HYZdyW2HM2tKQhBlpKmohEap44UcmMg5on6JcvooVmZwlNjws_I31Gfrl-q-MSkVfDYuewTof3XRwvKfCyDxiHhRRk4CKBEA44Pr86SgYXqfvkmdIt6PVpTUThmjUKM5yhqzehV-6tIFDh_PHfD2onbng6SDNTrmUsI74yGRiS9HWDDL-SwRgz2S2W4doV7iUe4vl0ihQvkofxWbklfmMYkU0lb4Dm8z4foUE7W_D-pjBJvGwc4sHAZmnLpTQhUcCjMrQVNTEOI0MIRyHIm9qKzfBw8ARy4lQlkcVYspWBnnDzA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"name\": \"John Doe\"}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:3000/api/users",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Users",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:3000/api/users",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Send a Message (don't forget to replace the userId in the URL)",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6IjJaUXBKM1VwYmpBWVhZR2FYRUpsOGxWMFRPSSIsImtpZCI6IjJaUXBKM1VwYmpBWVhZR2FYRUpsOGxWMFRPSSJ9.eyJhdWQiOiJodHRwczovL21heGNvZGUubmV0LzFhOTVhNTQ0LWEyOGUtNDRkYy1iOGRkLWIyNzU5YTg1YmE1ZiIsImlzcyI6Imh0dHBzOi8vc3RzLndpbmRvd3MubmV0LzFkYTNjYjBmLTk2MjgtNDUyYy1hMGNhLTA3OTVlZjEwOTg0Yy8iLCJpYXQiOjE2NjY2MDE0MzEsIm5iZiI6MTY2NjYwMTQzMSwiZXhwIjoxNjY2NjA2ODI2LCJhY3IiOiIxIiwiYWlvIjoiQVZRQXEvOFRBQUFBK0c3elRNWTFMQjNPTmlOSGdqWjhidnJUMjdwME5ES0hrbjZCbHRzbHZtTTdVaExRY2lTbG5XbzRWWC9qUWk5R1lHL3hVaXlJSUZtT3l5M05QemFyc1J2ZHNLR3VxZzYrY1RKVmFjbkUwUjA9IiwiYW1yIjpbInB3ZCIsIm1mYSJdLCJhcHBpZCI6IjFhOTVhNTQ0LWEyOGUtNDRkYy1iOGRkLWIyNzU5YTg1YmE1ZiIsImFwcGlkYWNyIjoiMCIsImZhbWlseV9uYW1lIjoiTWFyaW5pY2EiLCJnaXZlbl9uYW1lIjoiQWRyaWFuIiwiaXBhZGRyIjoiODIuNzcuMjM3LjUyIiwibmFtZSI6IkFkcmlhbiBNYXJpbmljYSIsIm9pZCI6IjM1NjQ2Yjg3LTdlMjctNGRlMi1hOGZlLTAxMzJlM2QwZmJkZCIsIm9ucHJlbV9zaWQiOiJTLTEtNS0yMS02MTg2MjU2ODItMjUxNTE3ODIwMi0yMjI0NjUwNjQxLTQxMTkiLCJyaCI6IjAuQVhrQUQ4dWpIU2lXTEVXZ3lnZVY3eENZVEVTbGxScU9vdHhFdU4yeWRacUZ1bDk1QUhjLiIsInNjcCI6InVzZXJfaW1wZXJzb25hdGlvbiIsInN1YiI6IllOQWRCWmdHaXpkSGdlLVJkdkZJSGJram0xRE9qNkpoZVVxLVRuY3hseVEiLCJ0aWQiOiIxZGEzY2IwZi05NjI4LTQ1MmMtYTBjYS0wNzk1ZWYxMDk4NGMiLCJ1bmlxdWVfbmFtZSI6ImFkcmlhbi5tYXJpbmljYUBtYXhjb2RlLm5ldCIsInVwbiI6ImFkcmlhbi5tYXJpbmljYUBtYXhjb2RlLm5ldCIsInV0aSI6InJDOW94aXRVRWt1Tlp2RXJGWmtqQUEiLCJ2ZXIiOiIxLjAifQ.fv1Ci6nTnkU_G5ZzOB10_dtMAnpkwowr5ir8Jf_HYZdyW2HM2tKQhBlpKmohEap44UcmMg5on6JcvooVmZwlNjws_I31Gfrl-q-MSkVfDYuewTof3XRwvKfCyDxiHhRRk4CKBEA44Pr86SgYXqfvkmdIt6PVpTUThmjUKM5yhqzehV-6tIFDh_PHfD2onbng6SDNTrmUsI74yGRiS9HWDDL-SwRgz2S2W4doV7iUe4vl0ihQvkofxWbklfmMYkU0lb4Dm8z4foUE7W_D-pjBJvGwc4sHAZmnLpTQhUcCjMrQVNTEOI0MIRyHIm9qKzfBw8ARy4lQlkcVYspWBnnDzA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \"message\": \"Welcome to Snappy\" }"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:3000/api/messages/6ea1ae5b-6c2d-4cb0-8e71-71dd605dfbda",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"messages",
+						"6ea1ae5b-6c2d-4cb0-8e71-71dd605dfbda"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Messages",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:3000/api/messages",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"messages"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete All Messages",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:3000/api/messages",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"messages"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
